@@ -1,0 +1,170 @@
+#root {
+    /*max-width: 1280px;*/
+    margin: 0 auto;
+    /*padding: 2rem;*/
+    text-align: center;
+
+}
+
+.swal-fullscreen {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.swal-2-select {
+    color: #1a1a1a;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.custom-card-success:hover {
+    box-shadow: 0 0 2em rgba(12, 239, 17, 0.67);
+}
+
+.custom-card-danger:hover {
+    box-shadow: 0 0 2em #ff6464aa;
+}
+
+.custom-card-warning:hover {
+    box-shadow: 0 0 2em #ff6464aa;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+/*.header{*/
+/*  position: fixed;*/
+/*}*/
+
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*background: #ffffff;*/
+    /*width: 70vw;*/
+    min-height: 85vh;
+    background: #000428; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #f9f9f9;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    z-index: 9999;
+}
+
+.sidebar {
+    z-index: 9998;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    width: 15vw;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    color: #f9f9f9;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a, li {
+    margin-top: 3vh;
+    display: block;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 50vh;
+    justify-content: center;
+}

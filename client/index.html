@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="./src/assets/LogoBg.png" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Simply Voting</title>
+    <script src="./node_modules/holderjs/holder.js"></script>
+    <script>
+        Holder.addTheme('dark', {
+            bg: '#000',
+            fg: '#aaa',
+            font: 'monospace',
+            fontweight: 'normal'
+        })
+        Holder.addTheme('white', {
+            bg: '#fff',
+            fg: '#c9c9c9',
+            font: 'monospace',
+            fontweight: 'bolder'
+        })
+        Holder.addTheme('sky', {
+            bg: '#0cf',
+            fg: '#03031c',
+            font: 'monospace',
+            fontweight: 'bolder',
+            size: 24
+        })
+    </script>
+</head>
+<body>
+<div id="root"></div>
+<script src="/src/main.jsx" type="module"></script>
+</body>
+
+</html>
